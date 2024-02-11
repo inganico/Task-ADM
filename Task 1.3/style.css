@@ -1,0 +1,73 @@
+.body {
+  background-color: rgb(236, 220, 236);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 32px;
+  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-right: 100px;
+}
+
+.text:hover {
+  color: brown;
+}
+
+.text-animation {
+  animation: textStyle 0.5s ease;
+}
+
+@keyframes textStyle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.square {
+  width: 600px;
+  height: 600px;
+  background-color: brown;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.square-animation {
+  animation: squareStyle 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes squareStyle {
+  0% {
+    width: 600px;
+  }
+
+  100% {
+    width: 720px;
+  }
+}
